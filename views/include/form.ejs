@@ -1,0 +1,45 @@
+<form action="/api/faculty" method="POST" id="faculty" required="true">
+    <div class="form-class">
+        <select class="form-control-class" id="dropdown1" name="dept" >
+            <option>Choose Department</option>
+            <% for (var i=0; i < departments.length; i++) { %>
+                <option>
+                    <%= departments[i].dept %>
+                </option>
+                <% } %>
+        </select>
+    </div>
+    <div class="form-class">
+        <select class="form-control-class" id="dropdown2" name="b_name">
+            <option>Choose Branch</option>
+            <% for (var i=0; i < branches.length; i++) { %>
+                <option>
+                    <%= branches[i].b_name %>
+                </option>
+                <% } %>
+        </select>
+    </div>
+    <div class="form-class">
+        <select class="form-control-class" id="dropdown3" name="sem">
+            <option>Choose Semester</option>
+            <% for (var i=0; i < semesters.length; i++) { %>
+                <option>
+                    <%= semesters[i].sem %>
+                </option>
+                <% } %>
+        </select>
+    </div>
+    <div class="form-class">
+        <select class="form-control-class" id="dropdown4" name="year">
+            <option>Choose Academic Session</option>
+            <% for (var i=0; i < sessions.length; i++) { %>
+                <option>
+                    <%= sessions[i].year %>
+                </option>
+                <% } %>
+        </select>
+    </div>
+    <br>
+    <br>
+    <button type="submit" class="submit-button">Submit</button>
+</form>

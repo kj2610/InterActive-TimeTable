@@ -1,0 +1,51 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Enter Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/api/cell" method="POST" id="cell">
+                    <div class="form-class">
+                        <select class="form-control-class" id="dropdown1" name="c_name">
+                            <option>Choose Subject</option>
+                            <% for (var i=0; i < courses.length; i++) { %>
+                                <option>
+                                    <%= courses[i].c_name %>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
+                    <div class="form-class">
+                        <select class="form-control-class" id="dropdown2" name="t_name">
+                            <option>Choose Faculty Name</option>
+                            <% for (var i=0; i < teachers.length; i++) { %>
+                                <option>
+                                    <%= teachers[i].t_name %>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
+                    <div class="form-class">
+                        <select class="form-control-class" id="dropdown3" name="room_no">
+                            <option>Choose Room</option>
+                            <% for (var i=0; i < rooms.length; i++) { %>
+                                <option>
+                                    <%= rooms[i].room_no %>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

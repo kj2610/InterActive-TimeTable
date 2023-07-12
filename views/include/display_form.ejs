@@ -1,0 +1,37 @@
+<form action="/display" method="GET" id="faculty">
+    <div class="form-group">
+        <select class="form-control" id="dropdown1" name="dept" required="true">
+            <option>Choose Department</option>
+            <% for (var i=0; i < departments.length; i++) { %>
+                <option>
+                    <%= departments[i].dept %>
+                </option>
+                <% } %>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="dropdown2" name="sem">
+            <option>Choose Semester</option>
+            <% for (var i=0; i < semesters.length; i++) { %>
+                <option>
+                    <%= semesters[i].sem %>
+                </option>
+                <% } %>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="dropdown3" name="timing">
+            <option>Choose Timing</option>
+            <option value="08:00 - 09:00">09:00 - 10:00</option>
+            <option value="10:00 - 11:00">10:00 - 11:00</option>
+            <option value="01:00 - 02:00">01:00 - 02:00</option>
+            <option value="02:00 - 03:00">02:00 - 03:00</option>
+            <option value="03:00 - 04:00">03:00 - 04:00</option>
+            <option value="04:00 - 05:00">04:00 - 05:00</option>
+            <option value="05:00 - 06:00">05:00 - 06:00</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary">Get Time-Table</button>
+</form>

@@ -1,0 +1,97 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/public/images/bg_main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #dadada;
+    border-bottom: none;
+    transition: color 0.5s;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.title h1 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #F5F5F5;
+    margin-top: 0px;
+}
+
+.summary {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #F5F5F5;
+    margin-top: 0px;
+    margin-left: 40px;
+    width: 620px;
+    word-wrap: break-word;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 200px;
+}
+
+.button1,
+.button2 {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1C1C1C;
+    font-weight: bold;
+    font-size: 20px;
+    height: 150px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.button1 {
+    margin-right: 50px;
+}
+
+.button1:hover,
+.button2:hover {
+    background-color: #dadada;
+    transition: background-color 0.5s;
+}
